@@ -1,97 +1,82 @@
-# Instagram-Clone using MERN Stack
+# 📸 Instagram Clone (MERN Stack)
 
-Building an Instagram web app clone using MERN Stack ( MongoDB , Express.js , React.js , Node.js ) and bring some additional features .
+A full-stack social media application built with the MERN stack (MongoDB, Express, React, Node.js). This project features a robust authentication system, image posting, social interactions (likes, comments, follow system), and a user profile management system.
 
-# Preview :
+**🚀 Live Demo Mode:** This project currently runs with an **In-Memory Mock Database**, meaning you can clone and run it immediately without setting up a local MongoDB instance!
 
-<img src="https://github.com/TheLordA/Instagram-Web-App-MERN-Stack-Clone/blob/master/Demo/LoginPageDemo.PNG" alt="Login Page Demo" width="800">
+## ✨ Features
 
-<img src="https://github.com/TheLordA/Instagram-Web-App-MERN-Stack-Clone/blob/master/Demo/HomePageDemo.PNG" alt="Home Page Demo" width="800">
+-   **User Authentication**: Secure Login and Signup using JWT (JSON Web Tokens).
+-   **Create Posts**: Upload posts with image URLs and captions.
+-   **Home Feed**: View posts from all users.
+-   **Social Interactions**:
+    -   ❤️ Like / Unlike posts.
+    -   💬 Comment on posts.
+    -   👤 Follow / Unfollow users.
+-   **User Profiles**: Dynamic profile pages showing stats (posts, followers, following) and user's posts.
+-   **Responsive Design**: Clean and modern UI inspired by Instagram.
 
-# Quick links :
+## 🛠️ Tech Stack
 
-1. [Usage](#usage)
-2. [Todo](#todo)
-3. [Contribute](#contribute)
-4. [Image Copyright Claims](#image-copyright-claims)
+-   **Frontend**: React (Vite), CSS3, Axios, React Router.
+-   **Backend**: Node.js, Express.js.
+-   **Database**: In-Memory JavaScript Store (Mock DB) for zero-config setup. *Easily switchable to MongoDB.*
+-   **Authentication**: JWT, Bcrypt.js.
 
-# Usage :
+## 🚀 Getting Started
 
-1. Fork the repo and then clone it or download it.
+Follow these steps to get the project running on your local machine.
 
-2. First install all dependencies:
+### Prerequisites
 
-     ```bash
-     # with npm
-     npm install
+-   Node.js (v16 or higher)
+-   npm (Node Package Manager)
 
-     # or with yarn
-     yarn
-     ```
+### Installation
 
-3. Create a `config/config.js` file and insert the following code it will contains all code variables. Replace values with yours !!!
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/rohit-marmat04/Instagram_Clone_Project.git
+    cd Instagram_Clone_Project
+    ```
 
-     ```javascript
-     "This will be provided soon";
-     ```
+2.  **Install Backend Dependencies:**
+    ```bash
+    cd backend
+    npm install
+    ```
 
-4. Start the server
-     ```javascript
-     npm run dev
-     ```
-5. Now run the app
-     ```javacript
-     npm start
-     ```
+3.  **Install Frontend Dependencies:**
+    ```bash
+    cd ../frontend
+    npm install
+    ```
 
-# Todo List :
+### Running the App
 
-UI :
+You need to run both the backend and frontend servers.
 
--    [x] Use MaterialUI-React
--    [ ] Continue improving the UI ( will never be done ^\_\_^ )
+1.  **Start the Backend Server:**
+    In the `backend` directory:
+    ```bash
+    npm run dev
+    ```
+    *Server runs on port 5000.*
 
-Features :
+2.  **Start the Frontend Server:**
+    In the `frontend` directory:
+    ```bash
+    npm run dev
+    ```
+    *App runs on http://localhost:5173.*
 
--    [x] Explore posts
--    [x] Search Users
--    [x] Like & comment posts
--    [x] Follow/UnFollow users
--    [x] Reset password using Emails
--    [x] Bookmark posts
--    [ ] Show notifications
--    [ ] Private messages
--    [ ] Rooms discussion
--    [ ] Like comments
--    [ ] Block members
--    [ ] Hashtags
--    [ ] Tags users
--    [ ] Add image filters
--    [ ] Show all online members (whom you've followed)
--    [ ] Story feature
--    [ ] IGTV
+3.  **Open in Browser:**
+    Navigate to `http://localhost:5173` to see the app!
 
-Tests & Performance :
+## 📸 Screenshots
 
--    [ ] Write UI tests
--    [ ] Express routes testing
--    [ ] Performance optimization (Code Splitting, Image Lazyload, etc.)
+*(Add screenshots of your app here)*
 
-General :
+## 📝 License
 
--    [x] Folder restructuring
--    [x] Some serious code refactoring
--    [x] JSDoc & comments ( still have some more work to do )
--    [ ] Upgrade packages
-
-# Contribute :
-
-Show your support by 🌟 the project !!
-
-==== > Feel free to contribute <====
-
-# Image Copyright Claims :
-
-Many images used in the project belong to their respective creators/authors. No claim by me & those who use this project.
-
-**Thanks for reading**
+This project is open source and available under the [MIT License](LICENSE).
